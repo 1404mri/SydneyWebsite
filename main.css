@@ -1,0 +1,204 @@
+body, .attitle{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.attitle{
+    height:100vh;
+ }
+#index{
+	background-image:url("images/sydney.jpg");
+	background-position:30%;
+}
+#sydneyoperahousepage{
+	background-image:url("images/sydneyoperahouse.jpg");
+}
+#tarongazoopage{
+	background-image:url("images/taronga-zoo.jpg");
+}
+#darlingharbourpage{
+	background-image:url("images/darlingharbour.jpg");
+	background-position:center;
+}
+#royalbotanicgardenspage{
+	background-image:url("images/royalbotanicgarden.jpg");
+}
+#sydneytowerpage{
+	background-image:url("images/sydneytower.jpg");
+}
+#header, header{
+	z-index:1000;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height: 10vh;
+}
+header{	
+	display:none;
+	background-color:white;
+	box-shadow: 0px 3px 0px 0px rgba(0,0,0,.06);
+}
+.nav{
+	font-family: "Playfair Display", Calibri, Arial, Times New Roman;
+	display:inline;
+	margin-right:9%;
+}
+.navlink{
+	color:black;
+	text-decoration:none;
+}
+a:hover{
+	color:blue;
+	animation-name:underline;
+	animation-duration:2s;
+}
+#intro{
+	height:100vh;
+}
+#text-content{
+	position:absolute;	
+	left:10%;
+	top:35%;
+	width:80%;
+	height:40vh;
+	text-align:center;
+	animation-name:popin;
+	animation-duration:2s;
+}
+.intro{	
+	font-family:"Dosis", Calibri, Arial, Times New Roman;
+	color:#fff;
+	margin-bottom:5%;
+}
+#title{
+	font-size:60px;
+	font-family:"Pacifico","Dosis", Calibri, Arial, Times New Roman;
+}
+.title{
+	font-size:60px;
+	font-family:"Amatic SC","Dosis", Calibri, Arial, Times New Roman;
+	position:absolute;
+	top:35%;
+	animation-name:popin;
+	animation-duration:2s;
+}
+#darlingharbourtitle{
+	left:40%;
+}
+#royalbotanicgardenstitle{
+	left:37%;
+}
+#tarongazootitle{
+	left:43%;
+}
+#sydneyoperahousetitle{
+	left:40%;
+}
+#sydneytowertitle{
+	left:43%;
+}
+#subtitle{
+	font-size:20px;
+}
+#blurb{
+	display:block;
+	position: absolute;
+	left:0px;
+	width:100%;
+	height:100vh;
+	background-color:white;
+}
+#blurbcontent{
+    display:none;
+    width:100%;
+    position:absolute;
+    left:0px;
+    top:10%;
+ }
+#moreinfo h1{
+	font-family:"Pacifico","Playfair Display",Calibri, Arial, Times New Roman;
+}
+#baragraph{
+	font-family:"Playfair Display",Calibri, Arial, Times New Roman;
+	position:absolute;
+	top:40%;
+	left:10%;
+	width:80%;
+	font-size:20px;
+}
+@keyframes popin{
+	from{opacity:0;top:100%;}
+	to{opacity:1;top:35%;}
+}
+@keyframes fadein{
+	from{opacity:0;font-size:0px;}
+	to{opacity:1;font-size:20px}
+}
+#textbox{
+	width: 30%;
+    margin-left: 5%;
+    float: left;
+    height: 30vh;
+}
+#text{
+	font-family:"Open Sans","Playfair Display",Calibri, Arial, Times New Roman;
+	font-size:20px;
+	text-align:center;
+}
+#castleimg{
+	width:30%;
+	float:right;
+}
+#moreinfo{
+	font-family:"Open Sans","Playfair Display",Calibri, Arial, Times New Roman;
+	text-align:center;
+}
+.infolink{
+    display:block;
+    margin-bottom:5%;
+}
+#slidebox{
+    float: right;
+    margin-left: 5%;
+    width: 50%;
+    margin-right: 5%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 75% 25%;
+ }
+ .slideboximg{
+    width:100%;
+    height:100%;
+    display:none;
+ }
+ .current{
+    width:100%;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+ }
+  .current img{
+     display:block;
+  }
+ .arrows{
+    grid-row-start:2;
+    grid-row-end:3;
+     background-size:20% 80%;
+    background-position:center;
+    background-repeat:no-repeat;
+ }
+ #rightarrow{
+ background-image:url("images/rightarrow.png");
+ width:100%;
+ grid-column-start:3;
+    grid-column-end:5;
+ }
+  #leftarrow{
+   background-image:url("images/leftarrow.png");
+  width:100%;
+ grid-column-start:1;
+    grid-column-end:3;
+ }
